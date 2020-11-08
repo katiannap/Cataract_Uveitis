@@ -1,10 +1,8 @@
 /* [THORNE] Visual acuity outcomes of cataract surgery in patients with uveitis
-	Author (Rerun only): Kat Parisis
+	Author: Kat Parisis
 	Start Date: 02-Nov-2020
-	End Date: TBD 
-	Madrid 2.0 Version: 07-Oct-2020 */ 
-	
---Madrid 1.0 initial unique patient cohort count:  32,734
+	End Date:  04-Nov-2020
+	Database Version: 07-Oct-2020 */ 
 
 --STEP 1: Create patient universe 
 
@@ -733,7 +731,7 @@ CREATE TABLE aao_grants.thorne_va_processing_all AS SELECT DISTINCT
 	b.index_date,
 	b.cataract_date,
 	datediff(
-		month, b.index_date, a.result_date) AS monthdiff
+		month, b.cataract_date, a.result_date) AS monthdiff
 FROM
 	aao_grants.thorne_va_processing a
 	INNER JOIN aao_grants.rpb_thorne_universe_new b ON a.patient_guid = b.patient_guid
