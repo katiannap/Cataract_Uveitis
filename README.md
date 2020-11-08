@@ -1,4 +1,4 @@
-# Cataract_Uveitis
+# Title: Cataract outcomes among patients with uveitis
 
 Summary: The goal is to understand the factors influencing surgical and visual outcomes after
 cataract surgery among patients with uveitis and to evaluate whether the use of prophylactic
