@@ -1,8 +1,5 @@
-/* [THORNE] Visual acuity outcomes of cataract surgery in patients with uveitis
-	Author: Kat Parisis
-	Start Date: 02-Nov-2020
-	End Date:  04-Nov-2020
-	Database Version: 07-Oct-2020 */ 
+[THORNE] Visual acuity outcomes of cataract surgery in patients with uveitis
+	
 
 --STEP 1: Create patient universe 
 
