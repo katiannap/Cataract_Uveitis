@@ -1,6 +1,5 @@
 ---
 author: Kat Parisis
-date: 11/10/20
 title: "Thorne Descriptive Stats"
 ---
 
