@@ -5,8 +5,8 @@
 
 		--1a. First, we want to focus on coding the inclusion criteria.
 		--We filter for patients in Madrid2 that have:
-		--all ICD codes listed in SAP inclusion criteria and attached documents (email correspondence between Dr. Thorne and Scott) with uveitis codes. 
-		--have been diagnosed between 2013 and 2018 *Flora approved 
+		--all ICD codes listed in SAP inclusion criteria with uveitis codes. 
+		--have been diagnosed between 2013 and 2018 
 
 		--1b. We are also creating the 'diagnosis_date' since we don’t have a diagnosis date column in Madrid2.
 		--It is standard protocol to take which ever date is earliest between documentation_date and problem_onset_date in the patient_problem_laterality 
@@ -53,7 +53,7 @@ SELECT DISTINCT
 		4
 	END AS uveitis_eye
 FROM
-	madrid2.patient_problem_laterality --LEFT OFF CHECK ICD CODES FOR ACCURACY + include rational
+	madrid2.patient_problem_laterality
 WHERE (
 	-- Noninfectious uveitis
 	problem_code ILIKE '135%' -- Sarcoidosis uveitis
